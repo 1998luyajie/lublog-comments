@@ -5,5 +5,10 @@
   "description": "Waline comment server for lublog, deployed on Vercel",
   "dependencies": {
     "@waline/vercel": "latest"
+  },
+  "overrides": {
+    "think-mongo": {
+      "mongodb": "6.17.0"
+    }
   }
 }
