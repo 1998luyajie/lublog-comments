@@ -23,14 +23,14 @@
       }
     },
     {
-      "src": "api/test.mjs",
+      "src": "test.mjs",
       "use": "@vercel/node"
     }
   ],
   "rewrites": [
     {
-      "source": "/api/test",
-      "destination": "/api/test.mjs"
+      "source": "/test",
+      "destination": "test.mjs"
     },
     {
       "source": "/((?!robots\\.txt$).*)",

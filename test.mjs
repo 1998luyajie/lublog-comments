@@ -6,7 +6,7 @@ const URI =
   'mongodb+srv://lu_db_user:plQVr3yHZDsvJQbg@cluster0.zaisgxd.mongodb.net/?authSource=admin&retryWrites=true';
 
 export default async function handler(req) {
-  const client = new MongoClient(URI, { serverSelectionTimeoutMS: 8000, connectTimeoutMS: 8000 });
+  const client = new MongoClient(URI, { serverSelectionTimeoutMS: 10000, connectTimeoutMS: 10000 });
   const start = Date.now();
   try {
     await client.connect();
