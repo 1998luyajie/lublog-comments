@@ -4,7 +4,8 @@
   "private": true,
   "description": "Waline comment server for lublog, deployed on Vercel",
   "dependencies": {
-    "@waline/vercel": "latest"
+    "@waline/vercel": "latest",
+    "mongodb": "6.17.0"
   },
   "overrides": {
     "think-mongo": {
