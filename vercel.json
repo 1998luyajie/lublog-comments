@@ -5,7 +5,7 @@
   ],
   "functions": {
     "api/index.mjs": {
-      "includeFiles": "node_modules/@mathjax/**/mjs/**",
+      "includeFiles": "node_modules/@mathjax/**/mjs/**,node_modules/mhchemparser/**,node_modules/mhchem/**",
       "excludeFiles": "node_modules/@mathjax/**/*.{woff2,otf}"
     }
   }
