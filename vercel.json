@@ -5,12 +5,7 @@
   ],
   "functions": {
     "api/index.mjs": {
-      "excludeFiles": [
-        "node_modules/@mathjax/mathjax-newcm-font/**/*.woff2",
-        "node_modules/@mathjax/mathjax-newcm-font/**/*.otf",
-        "node_modules/@mathjax/mathjax-tex-font/**/*.woff2",
-        "node_modules/@mathjax/mathjax-tex-font/**/*.otf"
-      ]
+      "excludeFiles": "node_modules/@mathjax/**/*.{woff2,otf}"
     }
   }
 }
