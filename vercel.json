@@ -12,14 +12,7 @@
     },
     {
       "src": "index.cjs",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "node_modules/@mathjax/mathjax-newcm-font/**/*",
-          "node_modules/mhchemparser/**/*",
-          "node_modules/ip2region/data/**"
-        ]
-      }
+      "use": "@vercel/node"
     }
   ],
   "rewrites": [
