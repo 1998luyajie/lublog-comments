@@ -1,20 +1,16 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "builds": [
-    {
-      "src": "index.cjs",
-      "use": "@vercel/node"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
   ],
-  "routes": [
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.cjs"
+  "functions": {
+    "api/index.mjs": {
+      "excludeFiles": [
+        "node_modules/@mathjax/mathjax-newcm-font/**/*.woff2",
+        "node_modules/@mathjax/mathjax-newcm-font/**/*.otf",
+        "node_modules/@mathjax/mathjax-tex-font/**/*.woff2",
+        "node_modules/@mathjax/mathjax-tex-font/**/*.otf"
+      ]
     }
-  ]
+  }
 }
