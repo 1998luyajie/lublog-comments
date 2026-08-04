@@ -4,6 +4,6 @@
   "private": true,
   "description": "Waline comment server for lublog, deployed on Vercel",
   "dependencies": {
-    "@waline/vercel": "latest"
+    "@waline/vercel": "1.40.3"
   }
 }
