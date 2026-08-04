@@ -12,7 +12,12 @@
     },
     {
       "src": "index.cjs",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "node_modules/ip2region/data/**"
+        ]
+      }
     }
   ],
   "rewrites": [
